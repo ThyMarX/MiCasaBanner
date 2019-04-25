@@ -16,7 +16,7 @@ p, h1{text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	
 	animation-duration: 0.5s;
 	
-	background-image: url(banner/corn.jpg);
+	background-image: url(corn.jpg);
 	background-size: cover;
 }
 
