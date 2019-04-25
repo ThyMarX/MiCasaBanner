@@ -1,50 +1,57 @@
 /* CSS Document */
-
-/* --- 1. banner skifte farve --- */
+body{
+	color: white;
+}
+p {font-size: 22px;}
+h1{font-size: 40px;}
+p, h1{text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
 
 .banner{
-	width: 320px;
-	height: 100px;
-	background-color: blue;
+	padding: 2px 60px;
+	width: 300px;
+	height: 300px;
 	
-	animation-name: red-to-blue;
-	animation-duration: 3s;
+	animation-duration: 0.5s;
+	
+	background-image: url(../../banner/corn.jpg);
+	background-size: cover;
 }
 
-@keyframes red-to-blue{
-	0%   {background: red;}
-	50%	 {opacity: 0;}
-	100% {background: blue;}
+@keyframes fade{
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
 }
 
-/* --- 2. box bevæger sig --- */
+.banner, .casa, .food, .visit, .tacos{
+	animation-name: fade;
+	animation-fill-mode: backwards;
+}
 
-.blackBox{
-	animation-name: box-move;
-	animation-duration: 4s;
-	animation-fill-mode: backwards; /* Animationen slutter i start position */
-	animation-timing-function: linear; /* Animations hastighed/bevægelse er uden acceleration */
+.casa{
+	animation-duration: 1.5s;
+	animation-delay: 0.5s;
+}
+
+.food{
+	animation-duration: 1s;
+	animation-delay: 1s;
+}
+
+.visit{
+	padding: 5px 50px;
+	background-color: #B72015;
+	display: inline;
+	text-shadow: none;
+	
+	animation-duration: 2s;
+	animation-delay: 1.5s;
+}
+
+.tacos{
+	animation-duration: 0.5s;
 	animation-delay: 2s;
-	background: black;
-	width: 30px;
-	height: 30px;
-	top: 20px;
-	left: 20px;
 }
-
-@keyframes box-move{
-	0%   {transform: translate(0px,   0px);}
-	100% {transform: translate(200px, 0px);}
-}
-
-
-
-
-
-
-
-
-
-
-
 
