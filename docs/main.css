@@ -1,0 +1,50 @@
+/* CSS Document */
+
+/* --- 1. banner skifte farve --- */
+
+.banner{
+	width: 320px;
+	height: 100px;
+	background-color: blue;
+	
+	animation-name: red-to-blue;
+	animation-duration: 3s;
+}
+
+@keyframes red-to-blue{
+	0%   {background: red;}
+	50%	 {opacity: 0;}
+	100% {background: blue;}
+}
+
+/* --- 2. box bevæger sig --- */
+
+.blackBox{
+	animation-name: box-move;
+	animation-duration: 4s;
+	animation-fill-mode: backwards; /* Animationen slutter i start position */
+	animation-timing-function: linear; /* Animations hastighed/bevægelse er uden acceleration */
+	animation-delay: 2s;
+	background: black;
+	width: 30px;
+	height: 30px;
+	top: 20px;
+	left: 20px;
+}
+
+@keyframes box-move{
+	0%   {transform: translate(0px,   0px);}
+	100% {transform: translate(200px, 0px);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
